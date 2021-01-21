@@ -1,0 +1,630 @@
+\documentclass{article}
+%\usepackage[square,sort,comma,numbers]{natbib}
+%\usepackage{bibentry}
+%\nobibliography*
+\usepackage[czech]{babel}
+%\usepackage{czech}
+\usepackage[utf8]{inputenc}
+
+\usepackage{hyperref}
+\usepackage[a4paper, margin=0.78in]{geometry}
+
+\title{Úvod do historie I.}
+%\author{}
+%\date{}
+
+
+\usepackage[pdftex]{graphicx}
+
+\usepackage{pgfplots, pgfplotstable}
+%\pgfplotsset{width=\textwidth,compat=1.8}
+
+\pgfplotsset{width=\textwidth,height=\textheight}
+
+%\usepackage{tikzpagenodes}
+%\usetikzlibrary{backgrounds} % for debugging tikz frame
+
+\begin{document}
+
+  %\maketitle
+
+  \begin{center}
+    \section*{Úvod do historie I.} 
+  \end{center}
+
+  \addcontentsline{toc}{section}{Obsah}
+  \tableofcontents
+
+  \newpage
+
+  \section*{}
+  \addcontentsline{toc}{section}{Periodizace}
+
+  \begin{tikzpicture}[
+    Levels/.style = {above right, font=\footnotesize, align=left},
+    %framed % tikz frame
+  ]
+
+  \pgfplotstableread{ % Read the data into a table macro
+  begin   end   Label
+ -800	 -338   {\hyperref[sec:polis]{Polis}}
+ -594     476   {\hyperref[sec:obcanstvi]{Občanství}}
+ -27      284   {\hyperref[sec:principat]{Principát}}
+  284	  476   {\hyperref[sec:dominat]{Dominát}}
+  962     1806  {\hyperref[sec:rise]{Říše}}
+%Svatá říše římská (od 16. století s přívlastkem \uv{národa německého})
+%autoritu si udržely instituce až do 2. poloviny 18. století
+%její zrušení rozhodnutím císaře Františka II. roku 1806 už jen potvrdilo skutečný stav
+  1010    1861  {\hyperref[sec:nevolnictvi]{Nevolnictví}}
+%ve většině zemí středověké feudální Evropy
+%prohlubovaly se naopak v řadě zemí východní a střední Evropy, zejména v 17.--18. století
+%Ve střední Evropě bylo nevolnictví zrušeno na přelomu 18. a 19. století, v Rusku teprve 1861
+  1066    1850  {\hyperref[sec:poddanstvi]{Poddanství}}
+%sociální vztah předmoderní, feudální společnosti
+  1108    1789  {\hyperref[sec:stavy]{Stavy}}
+%v předmoderní společnosti právně a sociálně uzavřené skupiny lidí,
+  1150    1650  {\hyperref[sec:emfyteuze]{Emfyteuze}}
+  1300    1599  {\hyperref[sec:humanismus]{Humanismus}}
+  1400    1550  {\hyperref[sec:renesance]{Renesance}}
+%kulturního a uměleckého proudu k obrodě antických estetických norem a ideálů i filozofického a literárního dědictví v 15. a 16. století
+%se renesanční umění zrodilo v 15. století
+%Ve vrcholném období 16. století Florencie zapůsobila jako vzor pro další města
+%od konce 15. století se šířila do dalších evropských zemí
+%Ve druhé polovině 16. století se zintenzivnila kulturní výměna se zaalpským prostředím
+%válka o Itálii, jež vyvrcholila roku 1527 vypleněním Říma
+  1517    1577  {Reformace \hyperref[sec:lutherReformace]{Lutherova}, \hyperref[sec:zwinglihoReformace]{Zwingliho}, \hyperref[sec:kalvinReformace]{Kalvínova}}
+  1576    1810  {\hyperref[sec:absolutismus]{Absolutismus}}
+  1660    1820  {\hyperref[sec:osvicenstvi]{Osvícenství}, \hyperref[sec:spolecenskaSmlouva]{Společenská Smlouva}}
+%evropský myšlenkový a duchovní proud konce 17. až počátku 19. století
+%1680--1790 (respektive až desátá léta 19. století), tj. do Francouzské revoluce nebo do Kantovy
+%
+%1. rané osvícenství 1680--1715: \uv{matematizace vesmíru} \uv{mechanizace světa}
+%2. vrcholné osvícenství 1740--80: vznik klíčových kritických děl
+%3. pozdní osvícenství a preromantismus -- cca 1780--1800 (respektive 1820): revolučním hnutí v Evropě
+%
+%V českých zemích můžeme osvícenství ohraničit zhruba lety 1740/45--1806
+  1700    1799  {\hyperref[sec:agrarniRevoluce]{Agrární revoluce}; \hyperref[sec:prumyslovaRevoluce]{Průmyslová Revoluce}}
+  1735    1850  {}
+%industrializací textilní a železářské výroby v některých regionech Anglie po polovině 18. století
+%Pro většinu Evropy teprve v průběhu 19. století
+%1735 objev koksování černého uhlí, 1746 výroba kyseliny sýrové, a především pak vynálezy pracovních strojů, které nahrazovaly práci lidských rukou, nejprve v předení bavlny (Hargreavesův ruční spřádací stroj \uv{jenny} 1764, Arkwrightův spřádací stroj na vodní pohon 1769) a v tkaní (Kayův \uv{létací člunek} 1773, Cartwrightův tkalcovský stav 1785)
+%parního stroje po 1780 nejen v textilní výrobě
+%(první přádelna bavlny na parní pohon 1785), ale také v železářství a v 1. polovině 19. století také v dopravě
+  1749    1776  {\hyperref[sec:terezianskeReformy]{Tereziánské Reformy}; \hyperref[sec:josefinskeReformy]{Josefinské reformy}}
+%zřízení centrálního orgánu pro veřejné a finanční záležitosti ({\it Directorium in publicis et cameralibrus}, 1749)
+%nejvyšší instance pro soudní záležitosti ({\it Oberste Justizstelle},1749)
+%státní rady jako nejvyššího poradního orgánu (1760)
+%trestního práva pro českorakouské země 1769
+%1776 byla z iniciativy J. v. Sonnenfelse zrušena $\nearrow$tortura
+%povstání roku 1775 vydala panovnice $\nearrow$robotní patent
+%zrušení $\nearrow$jezuitského řádu (1773)
+  1781    1790  {}
+  1800    1960  {\hyperref[sec:modernizace]{Modernizace}}
+%definováno po 2. světové válce
+%v Evorpě od 18. století (podle některých již od 16. století)
+%kořeny a počátky zásadních změn, k nimž došlo v 19.--20. století, a jimiž se \uv{moderní} (kapitalistická, industriální, občanská) společnost odlišovala od společnosti \uv{tradiční} (feudální, předmoderní)
+  1917    2000  {\hyperref[sec:komunismus]{Komunismus}; \hyperref[sec:fasismus]{Fašismus}; \hyperref[sec:nacismus]{Nacismus}}
+  1919    1945  {}
+  1925    1945  {}
+
+  }\datatable
+
+  \begin{axis}[
+    %width=\textwidth,
+    height=\textheight,
+    x=4pt,
+    bar width=1,
+    ybar stacked,   % Stacked horizontal bars
+    y dir=reverse,
+    ybar=12pt, % offset of the bar from the tick
+    xmin=0,         % Start x axis at 0
+    %ymin=-30,
+    %ytick=data,     % Use as many tick labels as y coordinates
+    %xticklabels from table={\datatable}{Label},  % Get the labels from the Label column of the \datatable
+    %xticklabels from table={\datatable}{Label},  % Get the labels from the Label column of the \datatable
+    %yticklabels from table={\datatable}{Label},  % Get the labels from the Label column of the \datatable
+    clip=false,
+    enlarge x limits={abs=2pt},
+    axis y line=left,
+    axis x line=none,
+    axis line style={draw=none},
+    %axis x line=none
+    %ytick align=inside,
+    ytick style={draw=none},
+    %nodes near coords,
+  ]
+%  \addplot [fill=none,draw=none,
+%    % the following places the total to the right of the bards
+%    point meta=x,
+%    nodes near coords={\pgfmathprintnumber[assume math mode=true]{\pgfplotspointmeta}},
+%    nodes near coords align={anchor=west},
+%    every node near coord/.append style={
+%     xshift=20pt,
+%     %font=\sffamily\bfseries\footnotesize, % change font style
+%     %color=total % set colour of numbers, total is a colour defined above
+%    }
+%  ] table [x expr=\coordindex, y=begin] {\datatable};
+  \addplot [fill=none, draw=none] table [y=begin, x expr=\coordindex] {\datatable};    % Plot the "First" column against the data index
+  \addplot [fill=gray!70!blue, style={draw=none}] table [y expr=\thisrow{end}-\thisrow{begin}, x expr=\coordindex] {\datatable};
+
+  \end{axis}
+
+  \begin{axis}[
+    xshift=5pt,
+    height=\textheight,
+    x=4pt,
+    bar width=1,
+    ybar stacked,   % Stacked horizontal bars
+    y dir=reverse,
+    ybar=12pt, % offset of the bar from the tick
+    xmin=0,         % Start x axis at 0
+    %ymin=-30,
+    ytick=data,     % Use as many tick labels as y coordinates
+    yticklabels from table={\datatable}{Label},  % Get the labels from the Label column of the \datatable
+    clip=false,
+    enlarge x limits={abs=2pt},
+    axis y line=right,
+    axis line style={draw=none},
+    ytick style={draw=none},
+    xtick style={draw=none},
+    axis x line=none
+  ]
+  \addplot [fill=none, draw=none] table [y=begin, x expr=\coordindex] {\datatable};
+  \addplot [fill=none, draw=none] table [y expr=\thisrow{end}-\thisrow{begin}, x expr=\coordindex] {\datatable};
+
+  \end{axis}
+
+  \end{tikzpicture}
+
+%  \begin{tikzpicture}[
+%    Levels/.style = {above right, font=\footnotesize, align=left},
+%    %framed % tikz frame
+%  ]
+%
+%  \pgfplotstableread{ % Read the data into a table macro
+%  begin  end  Label
+%  0      150  prvniStol
+%  100    200  druheStol
+%  400    500  pateStol
+%  }\datatable
+%
+%  \begin{axis}[
+%    %width=\textwidth,
+%    height=\textheight,
+%    x=4pt,
+%    bar width=1,
+%    ybar stacked,   % Stacked horizontal bars
+%    y dir=reverse,
+%    ybar=12pt, % offset of the bar from the tick
+%    xmin=0,         % Start x axis at 0
+%    ymin=-30,
+%    ytick=data,     % Use as many tick labels as y coordinates
+%    xticklabels from table={\datatable}{Label},  % Get the labels from the Label column of the \datatable
+%    %xticklabels from table={\datatable}{Label},  % Get the labels from the Label column of the \datatable
+%    %yticklabels from table={\datatable}{Label},  % Get the labels from the Label column of the \datatable
+%    clip=false, % <-- added
+%    enlarge x limits={abs=2pt},
+%    axis y line=left,
+%    %axis x line=none,
+%    axis line style={draw=none},
+%    %ytick align=inside,
+%    %ytick style={draw=none},
+%    %nodes near coords,
+%  ]
+%  \addplot [fill=none,draw=none,
+%    % the following places the total to the right of the bards
+%    point meta=x,
+%    nodes near coords={\pgfmathprintnumber[assume math mode=true]{\pgfplotspointmeta}},
+%    nodes near coords align={anchor=west},
+%    every node near coord/.append style={
+%     xshift=20pt,
+%     %font=\sffamily\bfseries\footnotesize, % change font style
+%     %color=total % set colour of numbers, total is a colour defined above
+%    }
+%  ] table [x expr=\coordindex, y=begin] {\datatable};
+%  %\addplot [fill=none, draw=none] table [y=begin, x expr=\coordindex] {\datatable};    % Plot the "First" column against the data index
+%  \addplot [fill=gray!70!blue, style={draw=none}] table [y expr=\thisrow{end}-\thisrow{begin}, x expr=\coordindex] {\datatable};
+%
+%  %\draw[black!15] (axis description cs:0,0) rectangle (axis description cs:1,1);
+%
+%  %\draw[dotted] table [x=2cm, y=begin] %node[Levels] % <-- changed coordinates (of all three lines)
+%  %  {\datatable} ;% -- +(14.5cm,0) ;
+%
+%
+%  %\draw[dotted] (250,50) node[Levels] % <-- changed coordinates (of all three lines)
+%  %  {residential zone (single-family housing, multi-family residential, mobile homes)} -- +(14.5cm,0) ;
+%
+%  \end{axis}
+%
+%  \end{tikzpicture}
+
+%  \newpage
+%
+%  \section*{Časová osa}
+%
+%\hyperref[sec:polis]{sec:polis}
+%5. st. před Kr.
+%10. st. před Kr.
+%
+%\hyperref[sec:]{sec:obcanstvi}
+%212 po Kr.
+%
+%\hyperref[sec:principat]{sec:principat}
+%27 před Kr.--284 po Kr.
+%do 3. století po Kr.
+%
+%\hyperref[sec:dominat]{sec:dominat}
+%(284--305) Diocletianus
+%(306--337) Konstantin Veliký
+%(337--361) Constantinus II
+%(395) smrt Theodosia I. => dva císaři
+%476 konec dominátu na západě
+%
+%\hyperref[sec:emfyteuze]{sec:emfyteuze}
+%do novověku přežívající středověká právní úprava držby rolnické půdy, která se uplatnila zejména v souvislosti s kolonizací
+%v 17. století se rolníci dostali do nevolnické závislosti
+%
+%\hyperref[sec:absolutismus]{sec:absolutismus}
+%1576 - Jean Bodin: {\it Šest knih o státě}
+%teoretici v 17. století: Thomas Hobbes, Jacques Bossuet
+%V polovině 18. století: absolutismem k systémovým reformám
+%
+%\hyperref[sec:agrarniRevoluce]{sec:agrarniRevoluce}
+%v Anglii a nejvyspělejších částech západní Evropy během 18. století
+%
+%\hyperref[sec:humanismus]{sec:humanismus}
+%kulturní hnutí 14.--16. století
+%knihtisku v polovině 15. století
+%neohumanismu 18. století
+%
+%\hyperref[sec:josefinskeReformy]{sec:josefinskeReformy}
+%toleranční patent ze 13. října 1781
+%trestní zákoník z roku 1787
+%1781-1790
+%
+%\hyperref[sec:kalvinReformace]{sec:kalvinReformace}
+%Navazovalo na \hyperref[sec:lutherReformace]{reformaci} $\nearrow$M. Luthera v názoru na cestu ke spáse, na církev a úlohu duchovního a na \hyperref[sec:zwinglihoReformace]{reformaci} $\nearrow$U. Zwingliho v pojetí náboženské obce, v názoru na právo \hyperref[sec:poddanstvi]{poddaného} na odpor proti vrchnosti (a jejím zákonům), pokud se rozchází s Božími přiká
+%
+%\hyperref[sec:lutherReformace]{sec:lutherReformace}
+%kritickými tezemi vůči oficiálnímu učení katolické církve roku 1517
+%Boj o reformaci trval v Německu až do poloviny 16. století
+%1577 shodla na tzv. Formulaci shody
+%
+%\hyperref[sec:modernizace]{sec:modernizace}
+%definováno po 2. světové válce
+%v Evorpě od 18. století (podle některých již od 16. století)
+%kořeny a počátky zásadních změn, k nimž došlo v 19.--20. století, a jimiž se \uv{moderní} (kapitalistická, industriální, občanská) společnost odlišovala od společnosti \uv{tradiční} (feudální, předmoderní)
+%
+%\hyperref[sec:nevolnictvi]{sec:nevolnictvi}
+%ve většině zemí středověké feudální Evropy
+%prohlubovaly se naopak v řadě zemí východní a střední Evropy, zejména v 17.--18. století
+%Ve střední Evropě bylo nevolnictví zrušeno na přelomu 18. a 19. století, v Rusku teprve 1861
+%
+%\hyperref[sec:osvicenstvi]{sec:osvicenstvi}
+%evropský myšlenkový a duchovní proud konce 17. až počátku 19. století
+%1680--1790 (respektive až desátá léta 19. století), tj. do Francouzské revoluce nebo do Kantovy
+%
+%1. rané osvícenství 1680--1715: \uv{matematizace vesmíru} \uv{mechanizace světa}
+%2. vrcholné osvícenství 1740--80: vznik klíčových kritických děl
+%3. pozdní osvícenství a preromantismus -- cca 1780--1800 (respektive 1820): revolučním hnutí v Evropě
+%
+%V českých zemích můžeme osvícenství ohraničit zhruba lety 1740/45--1806
+%
+%\hyperref[sec:poddanstvi]{sec:poddanstvi}
+%sociální vztah předmoderní, feudální společnosti
+%
+%\hyperref[sec:prumyslovaRevoluce]{sec:prumyslovaRevoluce}
+%industrializací textilní a železářské výroby v některých regionech Anglie po polovině 18. století
+%Pro většinu Evropy teprve v průběhu 19. století
+%1735 objev koksování černého uhlí, 1746 výroba kyseliny sýrové, a především pak vynálezy pracovních strojů, které nahrazovaly práci lidských rukou, nejprve v předení bavlny (Hargreavesův ruční spřádací stroj \uv{jenny} 1764, Arkwrightův spřádací stroj na vodní pohon 1769) a v tkaní (Kayův \uv{létací člunek} 1773, Cartwrightův tkalcovský stav 1785)
+%parního stroje po 1780 nejen v textilní výrobě
+%(první přádelna bavlny na parní pohon 1785), ale také v železářství a v 1. polovině 19. století také v dopravě
+%
+%\hyperref[sec:renesance]{sec:renesance}
+%kulturního a uměleckého proudu k obrodě antických estetických norem a ideálů i filozofického a literárního dědictví v 15. a 16. století
+%se renesanční umění zrodilo v 15. století
+%Ve vrcholném období 16. století Florencie zapůsobila jako vzor pro další města
+%od konce 15. století se šířila do dalších evropských zemí
+%Ve druhé polovině 16. století se zintenzivnila kulturní výměna se zaalpským prostředím
+%válka o Itálii, jež vyvrcholila roku 1527 vypleněním Říma
+%
+%\hyperref[sec:rise]{sec:rise}
+%Svatá říše římská (od 16. století s přívlastkem \uv{národa německého})
+%autoritu si udržely instituce až do 2. poloviny 18. století
+%její zrušení rozhodnutím císaře Františka II. roku 1806 už jen potvrdilo skutečný stav
+%
+%\hyperref[sec:spolecenskaSmlouva]{sec:spolecenskaSmlouva}
+%koncept osvícenství
+%
+%\hyperref[sec:stavy]{sec:stavy}
+%v předmoderní společnosti právně a sociálně uzavřené skupiny lidí,
+%
+%\hyperref[sec:terezianskeReformy]{sec:terezianskeReformy}
+%zřízení centrálního orgánu pro veřejné a finanční záležitosti ({\it Directorium in publicis et cameralibrus}, 1749)
+%nejvyšší instance pro soudní záležitosti ({\it Oberste Justizstelle},1749)
+%státní rady jako nejvyššího poradního orgánu (1760)
+%trestního práva pro českorakouské země 1769
+%1776 byla z iniciativy J. v. Sonnenfelse zrušena $\nearrow$tortura
+%povstání roku 1775 vydala panovnice $\nearrow$robotní patent
+%zrušení $\nearrow$jezuitského řádu (1773)
+%
+%\hyperref[sec:zwinglihoReformace]{sec:zwinglihoReformace}
+%Curychu zavedl v letech 1520--23
+%
+%\hyperref[sec:fasismus]{sec:fasismus}
+%otevřená diktatura antiliberálního a antidemokratického zaměření, vycházející z nacionalismu nebo rasismu z 19. století,
+%
+%Itálie
+%1919 založena teroristická organizace $\nearrow${\it Fasci di combattimento}, přeměněná v roce 1921 ve fašistickou stranu
+%1922 po tzv. $\nearrow$pochodu na Řím byl Mussolini jmenován předsedou vlády
+%1925--1926 byl postupně likvidován parlamentní režim
+%1926 vyhlášen fašistický stát jedné strany
+%
+%Německo
+%NSDAP nacistická strana (založena také v roce 1919)
+%Adolf Hitler \hyperref[sec:rise]{říšským} kancléřem až v roce 1933
+%
+%V Portugalsku začala $\nearrow$Salazarova diktatura v rocu 1928
+%ve Španělsku byla nastolena občanskou válkou v letech 1936--1939
+%
+%v Německu a Itálii byla potlačena až porážkou uvedených zemí ve 2. světové válce
+%
+%\hyperref[sec:komunismus]{sec:komunismus}
+%ideologie a politická praxe se zformovalav Rusku bolševickou stranou po Říjnové revoluci v roce 1917
+%vznikem komunistických režimů ve východní Evropě po roce 1945
+%v Číně v roce 1949
+%v roce 1964 Leonid Brežněv zavedl neostalinismus
+%
+%\hyperref[sec:nacismus]{sec:nacismus}
+%{\it Mein Kampf} (Můj boj) v roce 1925
+%Nacistický politický oportunismus v situaci hluboké ekonomické i politické krize Německa na počátku 30. let úspěch a získal masovou podporu
+%ukončila nacistické období až totální porážka v roce 1945
+%Hana Ardentová ve studii {\it The Origins of Totalitarianism} z rokku 1951
+
+  \newpage
+
+  \section*{Encyklopedie dějin starověku.}
+  \addcontentsline{toc}{section}{\cite{Oliva:}~Encyklopedie dějin starověku.}
+  \subsection*{Občanství~\cite{Oliva:}}
+  \addcontentsline{toc}{subsection}{Občanství}
+  \label{sec:obcanstvi}
+
+  {\bf občanství} -- v Řecku a Římě určitý status obyvatel, který vyplynul z příslušnosti k politickému společenství, jež se konstituovalo jako samosprávná, vůči jiným společenstvím vymezená politická jednotka, tj. obec, stát. Termíny pro občanství v Řecku {\it politeia}, v Římě {\it civitas} označovaly původně právě souhrn občanstva žijícího v autonomní obci, případně (v Řecku) i formu politické organizace obce (ústavu). Občanství tedy vyjadřovalo příslušnost jedince k určitému občanskému kolektivu spojenému souhrnem práv a povinností (často i proklamovaným společným původem), z něhož se teprve odvozovalo právo individuální, které poskytovalo příslušníkům obce obecnou právní ochranu, nezajišťovalo však automaticky všem obyvatelům státu rovná politická či majetková práva. Na rozdíl od moderních států je proto třeba pro antické poměry nutno striktně odlišovat kategorie \uv{občané} a \uv{obyvatelé}: pouze občané jsou nositeli občanských práv, a tedy privilegovanou \uv{vládnoucí vrstvou} vůči neobčanským skupinám obyvatelstva, tj. svobodným, na teritoriu obce usazeným cizincům a nesvobodným otrokům. Občanství bylo vždy podmíněno svobodou, v jistém smyslu je občanské právo synonymem svobody: nesvobodný člověk nemůže být občanem, může se jím stát pouze nabytím svobody. Řecké státy přitom byly k rozšiřování občanství na dosavadní neobčany velmi skoupé, Řím naopak postupoval poměrně velkoryse. Jak v Řecku, tak v Římě byli plnými nositeli občanství pouze dospělí muži (bojovníci); ženy a děti politická práva neměly, v jiných právních záležitostech byly zastupovány mužskými členy rodiny. Občanské právo zajišťovalo základní právní rovnost občanů, nikoli vždy rovné možnosti k  občanskému uplatnění ve společnosti, které bylo závislé na sociální struktuře společnosti či ústavně daných kritériích, z nichž se odvozovalo reálné postavení jedince v obci.
+
+  Z řeckých obcí jsme nejlépe informování o občanství athénském. V $\nearrow$Athénách se muž stával občanem ({\it polítés}, mn. č. {\it polítai}) především narozením rodičům majícím občanské právo; takovéto děti se označovaly jako {\it paides gnésioi}. Druhou možností bylo jmenování občana lidovým shromážděním (udělení občanství zasloužilým cizincům, případně i soukromá adopce cizince). Občanství nebylo automatickou záležitostí -- po narození syna musel otec složit přísahu a $\nearrow$frátrie hlasovala o oprávněnosti zařazení dítěte mezi občany; pak byl syn zapsán do $\nearrow$fýly, tím získával titul občana a dědické právo. V osmnácti letech byl zapsán do matriky občanů v otcově $\nearrow$dému, získával athénské občanství, k jehož plnému uplatnění byl však oprávněn až po dvouleté vojenské službě ($\nearrow$efébie). K souboru občanských práv patřilo právo hlasovat na lidovém sněmu ($\nearrow$ekklésia), účastnit se soudů, uzavírat řádné sňatky s občankami, vlastnit a nabývat majetek; po dosažení třiceti let mohl být volen do úřadů ($\nearrow$tímai), do státní rady ($\nearrow$búlé) a do soudních porot ($\nearrow$héliaiá). K povinnostem  občanů patřila vojenská služba, placení daní (případně plnění $\nearrow$leitúrgií), účast na státních kultech a respektování státních orgánů. Občanství se pozbývalo soudním odsouzením (tzv. {\it atímiá}) nebo přestěhováním do jiné obce, pokud neexistovala zvláštní mezistátní dohoda ({\it isopoliteiá}). Viz též polis, politeia, propuštěnci.
+
+  Obsahem římského občanství ({\it civitas Romana}) byla práva politická a práva soukromá, zvláště hmotná; souhrn těchto práv, jímž byl definován občan jako právní osobnost, se označoval jako $\nearrow$caput. Vyrovnání právního postavení římských občanů lze datovat od úspěšného zápasu $\nearrow$plebejů s $\nearrow$patricii, s významným momentem přijetí $\nearrow$Zákonů XII desek a uzákoněním přístupu plebejů k úřadům. Hlavními  politickými právy byly: {\it ius suffragii}, právo účasti a hlasování na sněmech; {\it ius honorum}, právo zastávat státní úřady (bylo pro převážnou většinu občanů jen teoretické, neboť úřady nebyly placené a přístupné tedy byly jen bohatým občanům); {\it ius sacrorum}, právo (ale i povinnost) účastnit se státního kultu; {\it ius provocationis}, právo odvolat se k lidu proti úředním rozsudkům (nikoliv soudním!). Právem i povinností byla branná služba, {\it ius militae}. V soukromoprávní sféře měl občan zajištěna tato základní práva: {\it ius conubii}, právo uzavírat řádné manželství s římskou občankou ({\it matrimonium iustum}), z něhož se rodili plnoprávní občané; {\it ius commercii}, právo vlastnické, právo podnikat a oprávněnost k majetkovým právním aktům; právem, které nabízelo ve starší době možnost získání občanského práva cizincům (zvláště $\nearrow$Latinům), bylo {\it ius domicilii} a {\it ius migrationis}, právo  pobytu a právo na přistěhování do Říma. V oblasti hmotných práv byly vývojem římské práva občanské ženy zrovnoprávněny s muži. K základním povinnostem římského občana patřily branná povinnost (trvala až do konce antiky), placení daní, plnění některých služeb ({\it munera}), účast na státním kultu a poslušnost vůči úřadům. Existovala i kategorie částečného občanství, {\it civitas sine suffragio}, jehož součástí nebyla politická práva. Různě definované právo latinské ({\it ius Latii}) bylo poskytováno spojencům ($\nearrow$socii) jako předstupeň plného občanství.
+
+  Římského občanství se nabývalo především narozením z rodičů majících římské občanství a žijících v řádně uzavřeném manželství, dále adopcí a případně i přistěhováním do Říma. Dále mohlo být římské občanství uděleno cizincům (buď jednotlivcům nebo celým obcím), a to buď usnesením sněmu ($\nearrow$comitia), na doporučení $\nearrow$senátu nebo rozhodnutím vojevůdců, později císařů. Tento proces rozšiřování občanství v \hyperref[sec:rise]{říši} byl uzavřen roku 212 po Kr. ($\nearrow$Constitutio Antoniniana). Na rozdíl od řecké praxe dostávali v Římě občanství otroci propuštění na svobodu ($\nearrow$propuštěnci). A konečně další cestou k získání římského občanství byla vojenská služba v římském vojsku ($\nearrow$auxilia). Římské občanství se pozbývalo ({\it deminutio capitis} -- $\nearrow$caput) ztrátou svobody (upadnutí do otroctví, do zajetí), soudním rozsudkem (vyhnanství, odsouzení k doživotním nuceným pracím) a odstěhováním se do jiné obce (Řím uznával pouze jedno občanství). V řadě případů ovšem mohla být občanská práva restituována. Viz též civitas, kolonizace římská, socii, suffragium, populus Romanus, Quirites, Roma (Řím).\hfill (vm)
+
+  \subsection*{Polis~\cite{Oliva:}}
+  \addcontentsline{toc}{subsection}{Polis}
+  \label{sec:polis}
+
+  {\bf polis} (řec., mn. č. {\it poleis}) -- obec, město, městský stát. Etymologicky je výraz  {\it polis} spjat se sánskrtským  {\it púr} (= hrad, opevněné město). Jak uvádí Thúkýdidés (2, 15, 6), užívali Athéňané ještě v jeho době -- v druhé polovině 5. století před Kr. -- označení  {\it polis} pro opevněný pahorek, jenž byl nejstarším místem osídlení $\nearrow$Athén. Ostatně i běžný název tohoto místa  {\it Akropolis} znamená město (místo) na výšině ( {\it to akron} = špička, vrchol).
+
+  Trója, kterou obléhali $\nearrow$Achajové, je v homérských básních označována buď jako  {\it polis} nebo jako  {\it asty} (= město), a stejně tak je charakterizováno Odysseovo rodiště na ostrově Ithace. Obyvatelé Tróje i Ithaky jsou nazýváni  {\it polítai}, což byl v pozdější době věžný výraz pro občany.
+
+  Archeologický výzkum přinesl některé poznatky o sídlištích na sklonku \uv{temných staletí} dějin $\nearrow$Řecka. V tzv. staré Smyrně (při západním pobřeží Malé Asie) založené snad již v 10. století před Kr. a zničené vpádem Lýdů kolem roku 600 před Kr. byly objeveny hradby pocházející nejspíše z doby kolem poloviny 9. století před Kr. a další doklady urbanizace v egejské oblasti máme z ostrovů Chiu a Andru z 8. století před Kr.
+
+  Předpokladem rozmachu $\nearrow$kolonizace řecké byla polis jako společenství občanů, což znamená, že počátky této typické formy řeckého státu či obce spadají do 8. století před Kr. Kolonizace přispívala významnou měrou k rozvoji řeckých obcí ({\it poleis}).
+
+  Jádrem obce ({\it polis}) bylo zpravidla městské sídliště ({\it asty}), ale označení \uv{městský stát}, jehož se někdy používá, není příliš výstižné. Nedílnou součástí obce bylo totiž její zemědělské zázemí ({\it chórá} = volné místo, venkov, půda). Vlastnictví údělu půdy ({\it kléros}) bylo -- zejména ve starší době -- důležitým předpokladem \hyperref[sec:obcanstvi]{občanství}. V $\nearrow$Solónově ústavě v Athénách byla práva občanů stanovena podle výnosu z půdy a ve Spartě vedla ztráta údělu půdy ke ztrátě občanských práv.
+
+  Charakteristickým rysem obce ({\it polis}) byla její $\nearrow$autonomie a úsilí zachovat si soběstačnost ({\it autarkeia}). Polis, kterou Aristotelés v {\it Politice} (3, 1279a 21) definuje jako společenství svobodných ({\it koinóniá tón eleutherón}), se stala výrazným faktorem pro rozvoj individuality a tvůrčích sil občanů.\hfill (po)
+
+  \subsection*{Principát~\cite{Oliva:}}
+  \addcontentsline{toc}{subsection}{Principát}
+  \label{sec:principat}
+
+  {\bf principát} (lat. {\it principatus}) -- státní forma římské \hyperref[sec:rise]{říše} v období tzv. raného císařství, 27 před Kr.--284 po Kr. Nový režim, vytvořený Augustem ($\nearrow$Augustova doba), byl jakýmsi kompromisem mezi dřívější republikou a nově nastolenou monarchií, který se projevoval především v tom, že byly zachovány republikánské instituce: čestné úřady (konzulát, prétura, édilita, kvéstura i tribunát lidu), $\nearrow$senát a (po jistou dobu) i lidové shromáždění ($\nearrow$comitia), vedle nichž stál nyní navíc $\nearrow$princeps jako garant chodu státu a ochránce zájmů římského lidu ($\nearrow$populus Romanus). Výsostnost ústavních mocí ve státě zůstávala nominálně stejná jako za republiky -- na formuli {\it Senatus populusque Romanus} ($\nearrow$SPQR) se nic nezměnilo, ale skutečná moc byla v rukou císaře opírajícího se o vojsko a vlastní císařskou (říšskou) byrokracii. Ve srovnání s republikánskými úřady, jejichž reálné pravomoci byly pozměněny a silně oslabeny, byl senát ve svých pravomocích posílen o zákonodárnou, soudní, a posléze i volební funkci, a byl nadále považován za rozhodující státní orgán (jmenoval či potvrzoval císaře), ale prekérnost jeho pozice a závislost na vůli císaře se ukazovala zvláště za vlád \uv{špatných} císařů. Nicméně za principátu byl vztah mezi principem a senátem určující pro charakter vnitřní politiky.
+
+  Principát se dostal do hluboké krize ve 3. století po Kr. ($\nearrow$ vojenští císaři), po které už tento systém nemohl být obnoven. Reformami císaře $\nearrow$Diocletiana byl pro \uv{pozdní císařství} ustaven režim $\nearrow$dominátu.\hfill (vm)
+
+  \subsection*{Dominát~\cite{Oliva:}}
+  \addcontentsline{toc}{subsection}{Dominát}
+  \label{sec:dominat}
+
+  {\bf dominát} (lat. {\it dominus} = pán) -- označení pro pozdně antickou fázi římského císařství používané v historiografii od 19. století, a to na rozlišení od  předchozího $\nearrow$\hyperref[sec:principat]{principátu}. Dominát ({\it dominatus}) bývá definován jako helénisticko-orientální forma vlády, při které císař nezastřeně vystupuje jako pán nad \hyperref[sec:poddanstvi]{poddanými} (nikoliv jako jeden z občanů), jako suverénní zdroj práva a nejvyšší soudce. Mění se pojetí císařského úřadu, dvorním ceremoniálem se císař vzdaluje obyvatelstvu, rozšiřuje se bohatě hierarchizovaná byrokracie, jejímž ústředím je císařský palác, je vytvořena nová struktura úřadů a hodností a formalizovaných titulatur.
+
+  Základy dominátu položil svou reformní činností císař $\nearrow$Diocletianus (284--305), dovršitelem byl Konstantin Veliký (306--337), jehož syn Constantinus II. (337--361) dal dominátu \uv{byzantskou} podobu. Od smrti císaře Theodosia I. (395) vládli dva císaři v \hyperref[sec:rise]{říši} rozdělené na západní polovinu (hlavní město Řím, pak Ravenna) a na východní (hlavní město Konstantinopol -- Byzantion). Z významných změn dominátu vůči \hyperref[sec:]{principátu} je třeba uvést vyloučení $\nearrow$senátu z pozice \uv{spoluvládce}, opuštění Říma jako sídelního města, postupné znevolňování obyvatelstva, zvětšující se závislost státu na neřímských elementech (\uv{barbarizace} říše), v administrativě trvalá tendence k dělení \hyperref[sec:rise]{říše}. Významnou změnou je samozřejmě proměna říše v křesťanský stát. Dominát na západě skončil roku 476 pádem západořímské říše, na východě v modifikované podobě přežil ve středověké $\nearrow$byzantské říši.\hfill (vm)
+
+  \section*{Encyklopedie dějin novověku 1492-1815.}
+  \addcontentsline{toc}{section}{\cite{Hroch:}~Encyklopedie dějin novověku 1492-1815.}
+  \subsection*{Absolutismus~\cite{Hroch:}}
+  \addcontentsline{toc}{subsection}{Absolutismus}
+  \label{sec:absolutismus}
+
+  {\bf Absolutismus} -- státní systém typický pro většinu raně novověkých $\nearrow$monarchií v Evropě. Jeho základním principem bylo, že panovníkova moc ve státě nemá být omezována žádnou jinou institucí či zájmovou skupinou. Neměla však být vládou pouhé zvůle: panovníkova moc se měla řídit božími zákony i zákony, které vydal on či jeho předchůdcové. Důležitým legitimačním prvkem absolutismu byla vedle nároku z boží milosti panovníkova zodpovědnost za stát a prosazování státního zájmu: to mělo být plně proveditelné právě v podmínkách politického centralismu a konfesionální unifikace státu. Myšlenková východiska nacházel ve státoprávním učení Jeana Bodina ({\it Šest knih o státě}, 1576), ale také v učení o státním zájmu Niccoly Machiavelliho. Za jeho hlavní teoretiky v 17. století se považují Thomas Hobbes ($\nearrow${\it Leviathan}) a Jacques Bossuet, vychovatel syna Ludvíka XIV.
+
+  V politické praxi se ovšem uskutečnilo vskutku neomezené vládnutí panovníkovo jen zřídka a krátkodobě. V důsledku toho, že byl výsledkem dlouholetého zápasu mezi panovnickou a $\nearrow$\hyperref[sec:stavy]{stavovskou} mocí (v níž někdy měla silný podíl také $\nearrow$města), zachovaly se jisté relikty stavovského systému i poté, co si panovník zajistil rozhodující moc. Kromě toho bylo panovníkovo rozhodování omezeno vůlí a zájmy jeho ministrů a rádců a muselo brát ohledy na \uv{veřejné mínění} šlechty, i když formálně byla zbavena politické moci. Proto se v současné historiografii objevují pochybnosti o tom, zda lze o absolutismu v čisté podobě vůbec hovořit. Nesporné ovšem je, že se ve většině evropských států prosadil systém, kde šlechta byla jako stav zbavena politické moci (zachovala si ovšem moc ekonomickou i prestiž). Trvalé změny přinesl absolutismus ve správě (byrokratizace), politickém systému (centralizace, omezení moci šlechty), vojenství (stálé vojsko, počátky branné povinnosti), ekonomice ($\nearrow$protekcionismus).
+
+  Vzhledem k mnohotvárnosti politických systémů s dominující panovnickou mocí se obvykle odlišuje \uv{raný absolutismus}, kdy se panovník, často díky své osobní autoritě, úspěšně pokusil omezit moc stavů, aniž by však byl schopen je zcela vyřadit (Španělsko období Filipa II., alžbětinská Anglie), od \uv{klasického} dvorského absolutismu, jehož prototypem byla Francie Ludvíka XIV. Z hlediska sociálních poměrů se rozlišuje absolutismus západoevropský od východoevropského, kde dominoval \hyperref[sec:nevolnictvi]{nevolnický systém} (habsburská monarchie), respektive kde se absolutismus neprosadil jako výsledek porážky stavovského systému (Rusko).
+
+  V polovině 18. století se pod vlivem \hyperref[sec:osvicenstvi]{osvícenství} někteří panovníci pokoušeli využít absolutismu k prosazení systémových reforem \uv{shora}, které měly \hyperref[sec:modernizace]{modernizovat} poměry a zlepšit postavení obyvatelstva. Odtud také někdy označení osvícenský absolutismus ($\nearrow$osvícenství).
+
+  Po $\nearrow$Velké francouzské revoluci a pádu Napoleona se v některých státech politikové úspěšně pokusili obnovit absolutistickou formu vlády. Tento pozdní absolutismus byl v Rakousku, Prusku, některých italských státech a Španělsku likvidován $\nearrow$revolucemi.
+
+  \subsection*{Agrární revoluce~\cite{Hroch:}}
+  \addcontentsline{toc}{subsection}{Agrární revoluce}
+  \label{sec:agrarniRevoluce}
+
+  {\bf Agrární revoluce} -- metaforické označení zásadních změn ve způsobu obdělávání půdy a zemědělského hospodaření, které proběhly v Anglii a nejvyspělejších částech západní Evropy během 18. století a šířily se později i do ostatních oblastí. Jejich podstatou byl přechod od $\nearrow$trojpolního systému ke střídavému osévání půdy v pravidelných cyklech, v nichž vedle tradiční jaře a ozimu byly zastoupeny pícniny (zejména jetel a vojtěška), které obohacovaly půdu dusíkem. Díky pícninám mohl být dobytek celoročně ustájen, takže se zvětšila možnost hnojení polí a v důsledku toho odpadla potřeba úhoru. Nezbytnou součástí agrární revoluce bylo -- v závislosti na klimatických a půdních podmínkách -- postupné zavádění dalších nových plodin, zejména brambor, kukuřice, později i cukerné řepy a slunečnice. Jejím předpokladem bylo postupné zdokonalování zemědělského nářadí k orbě, setí a sklizni plodin, jejím průvodním jevem pak šlechtění osiva a plemenářství, stejně jako rozšiřování orné půdy rušením pastvin, vysoušením bažin a drenážováním. V důsledku agrární revoluce se zvýšila produktivita rostlinné výroby, ale především vzrostla výroba živočišná; došlo také ke změnám sociálním. Nový typ hospodaření se mohl uplatnit především v hospodářstvích, která disponovala větší rozlohou půdy v uzavřených celcích, a tedy také s početnější čeledí. To vedlo v Anglii a v některých dalších zemích k $\nearrow$ohrazování, respektive ke scelování pozemků ($\nearrow$komasace) a k sociální diferenciaci na venkově.
+
+  \subsection*{Emfyteuze~\cite{Hroch:}}
+  \addcontentsline{toc}{subsection}{Emfyteuze}
+  \label{sec:emfyteuze}
+
+  {\bf Emfyteuze} -- do novověku přežívající středověká právní úprava držby rolnické půdy, která se uplatnila zejména v souvislosti s kolonizací. Rolník obdržel půdu do dědičného držení (nájmu), přičemž měl plné právo jí disponovat pod podmínkou, že bude obdělávat pole a platit nájem. Postavení rolníků v oblastech, kde byla emfyteuze zavedena, mělo smluvní základ a bylo tedy relativně lepší než jinde, a to i když se v 17. století dostali do \hyperref[sec:nevolnictvi]{nevolnické} závislosti.
+
+  \subsection*{Humanismus~\cite{Hroch:}}
+  \addcontentsline{toc}{subsection}{Humanismus}
+  \label{sec:humanismus}
+
+  {\bf Humanismus} -- kulturní hnutí 14.--16. století zprvu spojené s italskou $\nearrow$\hyperref[sec:renesance]{renesancí} a šířící se z italských oblastí za Alpy, které kladlo důraz na studium antické vzdělanosti, zejména literatury a historie. Přístup širších vrstev ke vzdělání umožnil zejména Gutenbergův vynález knihtisku v polovině 15. století. Vyzdvižení antické kultury vedlo humanisty ke zdůraznění hodnoty individuálního pozemského lidského života a lidských schopností oproti scholastické redukci člověka na objekt posmrtné spásy a na nástroj poznávání Boha. Humanisté položili základ vědeckého zkoumání starověkých (zejména latinských a řeckých) textů, a tím stanuli u zrodu kritické filologie a historické vědy. Humanismus tak poznamenal zejména literaturu, v níž se objevovala první díla odborné literatury (historická, filologická, zeměpisná), ale také esej jako specifický žánr (Montaigne, Macchiavelli, Bacon). Do beletrie vstoupily nové interpretace biblických i symbolických námětů, ale také témata světská. Prohloubila se snaha o zachycení reality i individuální psychologie, objevily a rozvinuly se nové žánry, v próze především $\nearrow$román, novela (Boccaccio, Bandello, Cervantes), a v poezii sonet (Dante, Petrarca, Ronsard). I když humanismus měl výrazný zájem o pěstění mrtvých antických jazyků -- latiny a řečtiny --, dal zároveň rozhodující impuls ke kultivaci a vědomému rozvíjení jazyků národních, a tedy i ke vzniku řady nových národních literatur. Někteří autoři užívají termínu humanismus jako označení kultury celé epochy, pro kterou je běžnější označení \hyperref[sec:renesance]{renesance} Zájem o antickou vzdělanost znovu ožil v tzv. neohumanismu 18. století, jenž se především zasadil o zavedení latiny a řečtiny do školní výuky, ale ovlivnil také uměleckou tvorbu $\nearrow$klasicismu.
+
+  \subsection*{Josefinské reformy~\cite{Hroch:}}
+  \addcontentsline{toc}{subsection}{Josefínské reformy}
+  \label{sec:josefinskeReformy}
+
+  {\bf Josefinské reformy} -- reformy, které měly dovršit \hyperref[sec:modernizace]{modernizaci} státní správy cestou centralizace a byrokratizace započatou za vlády Marie Terezie ($\nearrow$\hyperref[sec:terezianskeReformy]{tereziánské reformy}), omezit moc církve a hospodářské výsady šlechty. Jejich ukvapenost a racionalizace však narazily na odpor šlechty i církve. Snahou snížit sociální napětí a zlepšit postavení venkovského obyvatelstva byl veden patent o zrušení $\nearrow$\hyperref[sec:nevolnictvi]{nevolnictví}, vydaný pro české země i pro Uhry. Na rozdíl od své matky se Josef II. odhodlal zasáhnout i do náboženských záležitostí: $\nearrow$toleranční patent ze 13. října 1781, toleranční režim vůči židovskému obyvatelstvu, rušení klášterů rozjímavých a žebravých řádů a převedení jejich majetku do náboženského fondu, zřízení $\nearrow$generálních seminářů určených k výchově státu oddaného kněžstva a vyňatých z pravomocí biskupství. Josefinský trestní zákoník z roku 1787 zrušil většinu mrzačících trestů i trest smrti (obnoven 1795) a proměnil také řadu zločinů náboženských a mravnostních v pouhé policejní přestupky ($\nearrow$vězení, $\nearrow$trestní právo 16.--18. století). Reformy berní a urbariální měly jen dočasnou platnost (josefinský katastr platil jen v letech 1789--90, také náhrada roboty peněžní dávkou vyhlášená v listopadu 1789 byla odvolána již v květnu následujícího roku). Kromě tolerančního patentu a $\nearrow$patentu o zrušení \hyperref[sec:nevolnictvi]{nevolnictví} byla většina ostatních reforem zrušena nebo radikálně zmírněna za vlády Leopolda II. a zejména Františka I.
+
+  \subsection*{Kalvín – reformace~\cite{Hroch:}}
+  \addcontentsline{toc}{subsection}{Kalvín – reformace}
+  \label{sec:kalvinReformace}
+
+  {\bf Kalvín, reformace} -- učení a praxe teologa a ženevského kazatele Jana Kalvína bylo součástí evropské $\nearrow$reformace. Navazovalo na \hyperref[sec:lutherReformace]{reformaci} $\nearrow$M. Luthera v názoru na cestu ke spáse, na církev a úlohu duchovního a na \hyperref[sec:zwinglihoReformace]{reformaci} $\nearrow$U. Zwingliho v pojetí náboženské obce, v názoru na právo \hyperref[sec:poddanstvi]{poddaného} na odpor proti vrchnosti (a jejím zákonům), pokud se rozchází s Božími přikázáními. Kalvín se radikálně vypořádal s učením o $\nearrow$transsubstanciaci a prosadil chápání bohoslužeb jako zamyšlení nad {\it Písmem} a symbolickou připomínku Kristovy oběti. Proto neměla být při bohoslužbách a v prostorách kostelů, které již neměly sakrální povahu, trpěna žádná okázalost. Považoval za ideální měšťansko-republikánské, respektive aristokraticko-\hyperref[sec:stavy]{stavovské} uspořádání státu se silným podílem teologů. Vyzvedl etickou hodnotu práce, kterou považoval za základní povinnost člověka. Úspěšné podnikání bylo v duchu učení o $\nearrow$predestinaci znamením Boží milosti, nesmělo však být zneužíváno pro rozhazovačný či zahálčivý život. Proto byla jeho etika někdy spojována s duchem kapitalistického podnikání. Přísné dodržování norem mravného chování mělo být pod dohledem příslušníků náboženské obce. V jeho představě Boha byly silné starozákonní prvky a zejména pak jeho žáci a následovníci věřili, že Bůh bezprostředně zasahuje do života jedince i státu a celé společnosti.
+
+  Kalvínova reformace se šířila z jeho působiště Ženevy jen s obtížemi, poněvadž ji odmítala a pronásledovala nejen katolická církev, ale také přívrženci \hyperref[sec:lutherReformace]{Lutherovi}. Pozitivní přijetí nalezla nejprve v některých švýcarských kantonech, kde žili přívrženci \hyperref[sec:zwinglihoReformace]{Zwingliho reformace}, s níž se Kalvínovi přívrženci spojili v helvetském vyznání víry ($\nearrow$Helvetská konfese). Získalo převahu ve Skotsku a severním Nizozemí a silné pozice ve Francii ($\nearrow$hugenoti) a Uhrách, tedy tam, kde Kalvínovo učení o právu na odpor posilovalo \hyperref[sec:stavy]{stavovskou}, respektive měšťanskou opozici proti útisku ze strany katolického panovníka.
+
+  \subsection*{Lutherova reformace~\cite{Hroch:}}
+  \addcontentsline{toc}{subsection}{Lutherova reformace}
+  \label{sec:lutherReformace}
+
+  {\bf Lutherova reformace} -- základní proud německé $\nearrow$reformace byl založen na učení augustiniánského řeholníka Martina Luthera, který vystoupil poprvé se svými kritickými tezemi vůči oficiálnímu učení katolické církve roku 1517. Luther vyšel z názoru, že ke spáse nemůže člověk dojít prostřednictvím kněží a církevních institucí a svátostí ani dobrými skutky, nýbrž prostřednictvím bezpodmínečné víry v milosrdenství Boží a přísným dodržováním textu {\it Písma}, především {\it Nového zákona}. Odtud vyplýval důraz na bibli jako jediný zdroj principů víry (tedy odmítnutí tzv. církevní tradice) a odmítání všeho, pro co v jejím textu není doklad, jako byl např. očistec či kult svatých. Luther nově definoval také církev, v níž již neměli posvěcení kněží výsadní postavení. Výrazem rovnosti všech věřících se stalo přijímání pod obojí, zatímco v katolické církvi bylo přijímání z kalicha výsadou duchovního. Obec věřících měla mít právo určit si svého duchovního, jehož hlavním úkolem je správně vykládat text bible. Věřící se měli aktivně podílet na bohoslužbách a rozumět textu bible: proto bylo třeba hlásat Kristovo učení v lidu srozumitelném, tj. \uv{národním} jazyce. Aktivní účast náboženské obce na bohoslužbách měla být posílena zpěvem náboženských písní. Lutherova etika je založena na dvou principech: především na názoru, že lásku k bližnímu lze nejlépe uskutečnit svědomitým výkonem povolání, a na názoru, že světská vrchnost, i když je důsledkem prvotního hříchu člověka, je zárukou stability a klidu na zemi, a že je povinností věřícího vrchnost následovat a poslouchat. Z těchto obecných principů v praxi vyplývalo, že reformací se do náboženského života dostal národní jazyk a zesílila uvědomělá účast lidu na náboženském životě, církev byla podřízena svrchovanosti panovníka a neměla mít pozemkový majetek (došlo k jeho částečné sekularizaci). Luther získal velmi rychle mnoho přívrženců především v Sasku a Durynsku, mnozí z nich však jeho učení radikalizovali jak teologicky, tak sociálně. Jiní naopak se snažili o to, aby se příliš nevzdálilo katolické věrouce: to se projevilo v prvním soustavném sepsání článků Lutherova učení, které pořídil Filip Melanchthon v $\nearrow${\it Confessio Augustana}. Boj o reformaci trval v Německu až do poloviny 16. století, kdy byla $\nearrow$augsburským náboženským mírem legalizována. $\nearrow$Knížata, která přijala Lutherovu reformaci, se sdružila ve $\nearrow$Šmalkaldském svazu (Sasko, Hesensko, Braniborsko, Meklenbursko, Württembersko a většina $\nearrow$říšských měst). Mimo území $\nearrow$\hyperref[sec:rise]{říše} se Lutherova reformace stala státním náboženstvím v Dánsku a Švédsku a ovlivnila také $\nearrow$anglikánskou církev. Luteránské obce vznikly také na území Polska, rakouských a českých zemí a Uher. Vzhledem k tomu, že Luther nezanechal systematický souhrn svého učení, probíhal ještě po několik desetiletí po jeho smrti zápas mezi různými proudy jeho přívrženců. Většina teologů i říšských \hyperref[sec:stavy]{stavů} se roku 1577 shodla na tzv. Formulaci shody ({\it Konkordienformel}), která byla spolu s {\it Confessio Augustana}, $\nearrow$Melanchthonovou {\it Apologií} a dalšími spisy shrnuta 1580 do {\it Knihy dohod -- Konkordienbuch}.
+
+  \subsection*{Modernizace~\cite{Hroch:}}
+  \addcontentsline{toc}{subsection}{Modernizace}
+  \label{sec:modernizace}
+
+  {\bf Modernizace} -- mnohoznačný termín, jímž se po 2. světové válce především sociální vědci pokoušeli pojmoslovně vyjádřit souhrn proměn, k nimž docházelo v Evropě od 18. století (podle některých již od 16. století). Zrodila se celá řada teorií modernizace (i jejich kritik), které však většinou pro studium a charakteristiku období raného novověku mají význam jen potud, že tam hledají kořeny a počátky zásadních změn, k nimž došlo v 19.--20. století, a jimiž se \uv{moderní} (kapitalistická, industriální, občanská) společnost odlišovala od společnosti \uv{tradiční} (feudální, předmoderní). Kořeny modernizace se hledají zejména v těchto proměnách a procesech: v hospodářské sféře to bylo prosazování obchodního $\nearrow$kapitálu, urbanizace, $\nearrow$manufakturní výroby, šíření $\nearrow$vynálezů, nových technologií a $\nearrow$industrializace, v politické sféře teoretické i praktické posilování zastupitelského systému a participace, zrod a postupné šíření myšlenky občanské rovnosti, parlamentarismus, v oblasti společenského života nová sociální stratifikace a vznik nových tříd a sociálních skupin, rostoucí sociální mobilita a komunikace, byrokratizace a racionalizace správy včetně dohledu $\nearrow$policie, v kulturní sféře alfabetizace, sekularizace života i školního a univerzitního vzdělání a demokratizace přístupu ke vzdělání, rozvoj $\nearrow$přírodních věd a vědeckého bádání vůbec, nástup $\nearrow$\hyperref[sec:osvicenstvi]{osvícenství} atd. Časté užívání termínu modernizace v rozdílných kontextech vedlo k tomu, že se stal na jedné straně zdrojem některých ideologicky podbarvených nedorozumění, na druhé straně k tomu, že se stal konvenčním a vágně definovaným označením nejrůznějších změn, které narušovaly tradiční povahu životních podmínek $\nearrow$feudalismu, respektive \uv{předmoderní} společnosti.
+
+  \subsection*{Nevolnictví~\cite{Hroch:}}
+  \addcontentsline{toc}{subsection}{Nevolnictví}
+  \label{sec:nevolnictvi}
+
+  {\bf Nevolnictví} -- označení typu osobní feudální závislosti rolníků ($\nearrow$\hyperref[sec:poddanstvi]{poddaných}), který byl charakterizován omezením osobní svobody (právo stěhovat se jen se souhlasem vrchnosti), vysokým podílem pracovních povinností (roboty) a omezeným právem disponovat půdou, na které rolník pracoval (až po možnost sehnání z půdy). Tyto těžké formy závislosti se ve větší či menší míře projevovaly ve většině zemí středověké feudální Evropy, ale byly v mnoha zemích, především na západě kontinentu, postupně zmírňovány. Udržely a prohlubovaly se naopak v řadě zemí východní a střední Evropy, zejména v 17.--18. století (odtud někdy termín tzv. druhé nevolnictví). Stupeň závislosti nebyl všude stejný: v Rusku zahrnoval i možnost prodeje nevolníka bez půdy, v severovýchodních knížectvích $\nearrow$\hyperref[sec:rise]{říše} bylo možno rolníka zbavit půdy a učinit z něj námezdně pracujícího nevolníka, naproti tomu v habsburské monarchii a některých zemích středního Německa se udrželo dědičné právo rolníka na půdu zahrnutou do $\nearrow$rustikálu a také omezení práva uzavírat sňatky a stěhovat se bylo často spíše formální povahy. Proto se někdy objevují pochybnosti o tom, zda systém feudální závislosti např. v českých zemích či v Uhrách lze označovat bez výhrad jako nevolnictví. V hospodářské sféře však bylo nevolnictví i ve střední Evropě obvykle spjato se systémem dvorů založených na robotní práci nevolníků, který je v němčině označován jako $\nearrow$Gutsherrschaft. Ve střední Evropě bylo nevolnictví zrušeno na přelomu 18. a 19. století, v Rusku teprve 1861.
+
+  \subsection*{Osvícenství~\cite{Hroch:}}
+  \addcontentsline{toc}{subsection}{Osvícenství}
+  \label{sec:osvicenstvi}
+
+  {\bf Osvícenství} (franc. {\it Lumières}, angl. {\it Enlightenment}, ital. {\it Lumi}, {\it Illuminismo}, něm. {\it Aufklärung}, rus. {\it Prosvjaščenije}) -- evropský myšlenkový a duchovní proud konce 17. až počátku 19. století, vyznačující se nekritickou vírou v lidský rozum a společenský pokrok i snahou o $\nearrow$racionalistické uchopení světa, společnosti a jejích dějin. Osvícenství se kriticky stavělo vůči autoritě a tradici a odmítalo vše, co se jevilo jako mimorozumové, \uv{pověrečné}, \uv{tmářské}. Jde o poslední evropské duchovní hnutí zřetelně kosmopolitního charakteru. Osvícenství lze vymezit zhruba lety 1680--1790 (respektive až desátá léta 19. století), tj. do Francouzské revoluce nebo do Kantovy {\it Kritiky čistého rozumu}, někteří historikové protahují pozdní osvícenství až do konce napoleonské epochy a na práh $\nearrow$Restaurace. Období osvícenství můžeme rozdělit na tři základní periody: 1. rané osvícenství (\uv{krize evropského vědomí} -- P. Hazard) -- cca 1680--1715 (respektive až 1740), které bylo ve znamení \uv{matematizace vesmíru} \uv{mechanizace světa} umožněné $\nearrow$galilejskou a $\nearrow$karteziánskou revolucí 2. čtvrtiny 17. století, jež pronikla do oblastí dosud nedotknutelných -- politiky a náboženství; 2. vrcholné osvícenství -- 1740--80, které poznamenal nástup nové generace skutečných \uv{osvícenců} a vznik klíčových kritických děl, období, kdy byly aplikovány osvícenské reformy; 3. pozdní osvícenství a preromantismus -- cca 1780--1800 (respektive 1820) poznamenal $\nearrow$sentimentalismus a vlivy $\nearrow$pietismu spolu s $\nearrow$Velkou francouzskou revolucí, $\nearrow$válkami napoleonskými a obecně revolučním hnutím v Evropě. V českých zemích můžeme osvícenství ohraničit zhruba lety 1740/45--1806. Osvícenství logicky předpokládá zpochybnění všech autorit tradicí posvěcených i schopnost jejich kritického zhodnocení, od autority otcovské přes autoritu panovnickou až k autoritě {\it Písma}. Vytváří tak náčrt světového $\nearrow$pokroku orientovaného \uv{vpřed}, do budoucnosti, nikoli již \uv{zpátky} (k mytickým počátkům či idealizované minulosti), v návaznosti na předchozí duchovní hnutí včetně $\nearrow$\hyperref[sec:renesance]{renesance}. Klíčovými pojmy se tedy stávají rozum (a obecně víra ve všemohoucnost lidského rozumu), kritičnost, duchovní svoboda, náboženská tolerance, nedůvěra vůči tradici a autoritě (zejména církve a \hyperref[sec:absolutismus]{absolutistického} státu). Garanty obecného pokroku a \hyperref[sec:humanismus]{humanity} se stávají vzdělání a výchova. Zrodil se nový ideál vzdělaného osvíceného patriota, který cítí zodpovědnost za blaho lidu ve své vlasti. Přímé dědictví osvícencům zanechala galilejská revoluce 2. čtvrtiny 17. století a nebývalý rozmach $\nearrow$přírodních věd ve 2. polovině téhož věku. Osvícenství se pocházelo vlastně z Anglie, kde byla vytvořena řada modelů a nových myšlenkových nástrojů (především $\nearrow$konstituční monarchie jako model politický, $\nearrow$deismus jako nástroj ideový), ale ve Francii se dočkalo největší popularity i vyhrocení antiklerikálních a $\nearrow$materialistických tendencí, zde byly také nejjasněji artikulovány politické požadavky, jejichž vyvrcholení představovala Velká francouzská revoluce. Naopak v Německu vyvrcholilo osvícenství německou klasickou filozofií (I. Kant, G. W. F. Hegel). Víra v mechanické fungování vesmíru předpokládala nové uspořádání vztahu mezi člověkem a Bohem, Bohem a státem. Nový vztah mezi Bohem a státem vyjadřovaly jak reformní církevní proudy namířené proti centralismu římské kurie ($\nearrow$galikanismus, $\nearrow$jansenismus, $\nearrow$febronianismus, $\nearrow$josefinismus), tak nové teorie státu a hospodářství, $\nearrow$společenská \hyperref[sec:spolecenskaSmlouva]{smlouva}, $\nearrow$liberalismus, požadavek dělení výkonné a zákonodárné moci, ekonomické zásady v duchu {\it laissez-faire}, {\it laissez-passer}, osvícenský $\nearrow$\hyperref[sec:absolutismus]{absolutismus}. Vědecká revoluce 17. století a $\nearrow$deismus přinesly ideu transcendentního, vzdáleného Boha ({\it deus absconditus}, božský architekt, Bůh-hodinář). Nové náboženské tendence poznamenaly i nový pohled na člověka, který není zatížený dědičným hříchem, proto má na jeho formování klíčový vliv výchova (zde měl významný vliv Rousseauův {\it Emil}. Kromě šíření utilitárního pohledu na morálku se v Evropě stává důležitým faktorem růst alfabetizace i všeobecného vzdělání ($\nearrow$Encyklopedia, $\nearrow$encyklopedisté). Rozklad univerzálního hodnotového systému křesťanství, který zrelativizoval smysl i účel lidského jednání i lidského života, prohloubil v pozdním osvícenství individualizaci a subjektivizaci, kontrastující s osvícenskou snahou o objektivizaci. Zároveň tento rozklad přispěl ke krizi starých identit a k hledání identity nové.
+
+  \subsection*{Poddanství~\cite{Hroch:}}
+  \addcontentsline{toc}{subsection}{Poddanství}
+  \label{sec:poddanstvi}
+
+  {\bf Poddanství} -- sociální vztah, který je typický pro celé trvání předmoderní, feudální společnosti. Vyjadřuje skutečnost, že v této společnosti se většina lidí svým zrozením stávala nerovnoprávnými tím, že se dostávala do podřízeného postavení vůči vrchnosti, jejíž místo ve společnosti bylo určeno rodem a systémem privilegií. Poddanská závislost se regionálně značně lišila, ale vždy zahrnovala v té či oné podobě sféru správní a soudní a byla základem pro nároky na peněžní dávky i využití pracovní síly. Její součástí byla také sociální disciplinace poddaných. V raném novověku se jí na venkově vymykala jen nepatrná skupina svobodných sedláků (Norsko, Švédsko, Švýcarsko). Opakem poddanství a opravdovou alternativou vůči němu byl princip společnosti rovnoprávných občanů spravujících se podle konstitučních principů a občanského zákoníku.
+
+  \subsection*{Průmyslová revoluce~\cite{Hroch:}}
+  \addcontentsline{toc}{subsection}{Průmyslová revoluce}
+  \label{sec:prumyslovaRevoluce}
+
+  {\bf Průmyslová revoluce} -- metaforický termín, jehož se od konce 19. století užívá v podstatě ve dvojím významu: v užším slova smyslu jako označení několika desetiletí, kdy došlo k nástupu $\nearrow$industrializace v té či oné zemi, v širším slova smyslu pak jako celkem nezávazné, všeobecné označení celé epochy komplexních změn, k nimž v důsledku této proměny došlo.
+
+  Průmyslová revoluce jako epocha začala industrializací textilní a železářské výroby v některých regionech Anglie po polovině 18. století a brzy se přenesla také do jižní Belgie a severní Francie. Pro většinu Evropy však se stala rozhodujícím faktorem proměn teprve v průběhu 19. století. Předpokladem průmyslové revoluce bylo v 18. století výrazné zvýšení produktivity zemědělství ($\nearrow$\hyperref[sec:agrarniRevoluce]{agrární revoluce}) a řada technologických pokroků, jako byl např. 1735 objev koksování černého uhlí, 1746 výroba kyseliny sýrové, a především pak vynálezy pracovních strojů, které nahrazovaly práci lidských rukou, nejprve v předení bavlny (Hargreavesův ruční spřádací stroj \uv{jenny} 1764, Arkwrightův spřádací stroj na vodní pohon 1769) a v tkaní (Kayův \uv{létací člunek} 1773, Cartwrightův tkalcovský stav 1785). Postupně se užití strojů rozšířilo i do ostatních textilních odvětví. Uplatnění mechanických strojů bylo urychleno zaváděním nového typu hnacího stroje -- Wattova dvojčinného parního stroje po 1780 nejen v textilní výrobě (první přádelna bavlny na parní pohon 1785), ale také v železářství a v 1. polovině 19. století také v dopravě.
+
+  Po technologické stránce spočíval význam průmyslové revoluce v tom, že znásobila produktivitu lidské pracovní síly a zvětšila nezávislost výroby na přírodních silách (vodě, větru), otevřela dveře pro uplatnění nových zdrojů energie a orientovala výrobu na nové druhy suroviny. Zvyšovala se produktivita práce a otevíraly se nové možnosti pro investice $\nearrow$kapitálu (průmyslový kapitál). Z hlediska sociálního vývoje průmyslová revoluce zásadně změnila strukturu společnosti tím, že vytvořila novou společenskou třídu, jejíž příslušníci žili z práce za mzdu -- průmyslové dělnictvo ($\nearrow$proletariát). Zároveň začala masová průmyslová výroba ohrožovat a v textilních odvětvích vytlačovat drobné řemeslné výrobce, kteří měli vyšší výrobní náklady a nestačili s továrnami držet krok. Dalším sociálním důsledkem bylo vytváření nových sídelních aglomerací kolem či v blízkosti továren, které se nejednou zakládaly mimo tradiční městská centra. Tak docházelo ke specifické vlně urbanizace a zároveň k posunu ve vztahu mezi regiony uvnitř Anglie a později i uvnitř Francie a Belgie. Časově odstupňovaný počátek průmyslové revoluce a rozdíly v jejím rozsahu vedly k prohloubení nerovnoměrnosti hospodářského vývoje, a tedy ke zvětšování rozdílu v majetnosti a životním stylu nejvyspělejších industrializovaných a méně vyspělých regionů Evropy.
+
+  \subsection*{Renesance~\cite{Hroch:}}
+  \addcontentsline{toc}{subsection}{Renesance}
+  \label{sec:renesance}
+
+  {\bf Renesance} (franc. {\it renaissance} podle ital. {\it rinascita} = znovuzrození) -- pojmenování kulturního a uměleckého proudu spojeného s $\nearrow$\hyperref[sec:humanismus]{humanismem}, který se programově hlásil k obrodě antických estetických norem a ideálů i filozofického a literárního dědictví v 15. a 16. století. Současně podle názoru některých autorů i název pro historické období, které přímo následovalo po středověku. Na druhé straně se uplatňuje také zúžené chápání renesance jako proudu ve výtvarném umění, který byl součástí širšího duchovního proudu -- $\nearrow$\hyperref[sec:humanismus]{humanismu}. Přestože se historikové nikdy neshodovali v definici ani v dataci, používali a používají pojmu v obou smyslech. Z užšího uměleckohistorického pohledu se renesanční umění zrodilo v 15. století ($\nearrow$quattrocento) především ve Florencii a v prostředí bohatých a sebevědomých severoitalských $\nearrow$měst, prostřednictvím obchodu otevřených světu, kde vzpomínka na antiku nikdy zcela nevyhasla a Byzantinci zprostředkované dědictví řecké kultury jim bylo bližší než zaalpské Evropě. Ve vrcholném období 16. století (tzv. cinquecento) Florencie zapůsobila jako vzor pro další města, zejména když se její politické postavení oslabilo ve prospěch Říma za pontifikátu Julia II. a celá řada významných umělců odešla k papežskému dvoru (Michelangelo, Raffaelo Santi, Andrea Sansovino i Jacopo Sansovino). Mnozí z nich později působili i v Benátkách, vedle Tiziana Vecellia, Giovanniho a Gentile Belliniů, Giorgioneho a jejich dílen.
+
+  Obrat k antropocentrismu, zájem o pozemský život člověka se promítl i do malířské a sochařské tvorby v podobě úsilí o dokonalejší poznání a zobrazení lidského těla. Do obliby se dostal portrét, socha či obraz. Biblické i antické příběhy se odehrávaly na freskách či obrazech v současných městech a okolní krajině. Tyto novinky, umělecké výboje silných a výjimečně tvořivých osobností ukazují renesanci z širšího kulturně historického pohledu jako období objevování, zavádění a rozšiřování četných a významných kulturních inovací. \hyperref[sec:humanismus]{Humanističtí} vzdělanci vzkřísili ideál starých Řeků -- {\it kalokagathii} -- a koncipovali model {\it homo universale} -- člověka všestranně vzdělaného, který se kromě své profese měl s lehkostí a elegancí vyznat nejen v architektuře, sochařství, malířství a hudbě, ale i ve filozofii a historii, v antické mytologii, v zábavách hodných mužů, ve věcech veřejných i ve vojenství. Způsob života a mravy obchodníků a finančníků a aristokratů se ve městech sblížily a vytvořil se kulturní model, vhodný pro bohatou městskou mediteránní společnost. Jeho rozšíření umožnila jak koncentrace několika generací výrazně tvořivých osobností, tak i $\nearrow$mecenát mocných a bohatých vladařských rodů, jako byl rod Medici ve Florencii, z něhož pocházelo i několik papežů, Sforzové v Miláně či Gonzagové v Mantově, zakázky na přestavbu a výzdobu papežského sídla ve Vatikánu, benátské signorie na výzdobu dóžecího paláce, ale i investice v mnoha dalších $\nearrow$městech. Renesance nezůstala jen italským jevem, od konce 15. století se šířila do dalších evropských zemí, nikde jinde však tato kultura nenabyla tak výrazných a osobitých forem. Současná kulturní historiografie nevidí mezi středověkem a renesancí pouze zlom a rozchod, nýbrž nachází ohlasy na antiku i ve středověku a více zdůrazňuje návaznost.
+
+  Ve druhé polovině 16. století, kdy renesance přechází do $\nearrow$manýrismu, se centrum přeneslo do Benátek, jež ležely na cestě na sever, a zintenzivnila kulturní výměna se zaalpským prostředím. Zatímco v italském prostředí renesanci utvářela především městská společnost, za Alpami se o umělecké inovace nejdříve zajímali panovníci s \hyperref[sec:humanismus]{humanistickými} zájmy, často ovlivněni svými italskými manželkami. Uherský král Matyáš Korvín vytvořil \hyperref[sec:humanismus]{humanistický} okruh v Budíně a vybudoval renesanční rezidenci ve Visegradu, polský Zikmund Starý přestavoval krakovské sídlo na Wawelu, Tizian Vecellio portrétoval císaře Karla V. a pracoval i pro Filipa II. španělského, Ferdinand I. Habsburský výstavbou letohrádku na Pražském hradě představil za Alpami italskou architekturu, francouzský František I. získal roku 1516 pro svůj dvůr Leonarda da Vinci a k výzdobě zámku ve Fontainebleau skupinu italských malířů, jež ovlivnila vznik francouzského manýrismu. Pro zaalpské dvory se nakupovala umělecká díla a byli zváni umělci, nakupována díla malířů a sochařů, knihy, mapy, ale i nábytek, sklo, zrcadla, fajáns, látky. Od panovnických dvorů se zájem o nové umění a nový životní styl šířil mezi aristokracii a posléze mezi zámožné měšťanstvo. Proměnlivost poptávky po stále novém módním zboží se stala významným podnětem pro rozvoj mnoha nových odvětví výroby. Prostředníkem kulturní výměny byly nejen cesty mladých šlechticů a umělců za vzděláním a inspirací (Albrecht Dürer), ale paradoxně i dlouholetá $\nearrow$válka o Itálii, jež vyvrcholila roku 1527 vypleněním Říma. Tvořivé přijetí renesance vyžadovalo nejen finanční prostředky, ale i znalosti antických dějin a pochopení antické mytologie. Zaalpské země prožívající $\nearrow$reformaci nebyly připraveny přijmout renesanci a \hyperref[sec:humanismus]{humanismus} v plném rozsahu. Podobně silné postavení jako v Itálii měla městská společnost jedině v Nizozemí, kde vytvořila osobitou variantu renesance a \hyperref[sec:humanismus]{humanismu} pod vlivem reformace (Erasmus, Brueghelové). Některé prvky zejména renesanční architektury se mohly rozvinout jen v mediteránním prostředí a v klimatu střední či severní Evropy nemohly najít uplatnění.
+
+  \subsection*{Říše~\cite{Hroch:}}
+  \addcontentsline{toc}{subsection}{Říše}
+  \label{sec:rise}
+
+  {\bf Říše} -- {\bf 1.} v širším slova smyslu volný politický útvar zaujímající rozsáhlé území, často nestabilní a nepříliš přesně vymezené, spojené autoritou panovníka. Termínu se užívá zejména pro období starověku a stěhování národů. V raném novověku se jako říše označovala spíše metaforicky řada států, zejména těch, které vznikly spojením řady politických celků (ruská, osmanská, švédská, španělská, britská říše);{\bf 2.} v užším slova smyslu se říší míní Svatá říše římská (od 16. století s přívlastkem \uv{národa německého}), která měla původně nadnárodní povahu a nikdy se nestala centralizovaným státem a postrádala v raném novověku i základní atributy státnosti. V jejím čele stál král, jenž získal korunovací v Římě titul $\nearrow$císař, sdružovala $\nearrow$říšské \hyperref[sec:stavy]{stavy}, jejichž politickou reprezentací byl $\nearrow$říšský sněm, měla $\nearrow$říšskou armádu a byla $\nearrow$říšskou reformou rozčleněna na $\nearrow$říšské kraje, které měly jistou dávku samosprávy. Politický význam říše jako instituce klesal zejména po $\nearrow$vestfálském míru, ale jistou autoritu si udržely některé její instituce (např. $\nearrow$říšský komorní soud) až do 2. poloviny 18. století. V období $\nearrow$Velké francouzské revoluce a počínajících $\nearrow$válek napoleonských se její existence zcela formalizovala, existovala jen podle jména a její zrušení rozhodnutím císaře Františka II. roku 1806 už jen potvrdilo skutečný stav.
+
+  \subsection*{Společenská smlouva~\cite{Hroch:}}
+  \addcontentsline{toc}{subsection}{Společenská smlouva}
+  \label{sec:spolecenskaSmlouva}
+
+  {\bf Společenská smlouva} (franc. {\it contrat social}) -- klíčový koncept \hyperref[sec:osvicenstvi]{osvícenské} politické filozofie a teorie státu, tvořící později jednu ze základních koncepcí $\nearrow$liberalismu. Snažila se vysvětlit vznik společnosti historicky, předpokládala původní dohodu mezi autonomními, svobodnými a rovnými jednotlivci, kteří se zřekli části svých individuálních práv, jež přenesli na stát -- legitimní suverénní moc, která je zárukou bezpečnosti a práv všech. Nejdůležitějšími představiteli teorie společenské smlouvy byli britští myslitelé Thomas Hobbes (který předpokládal násilný vznik státu z původního stavu {\it války všech proti všem}, John Locke a francouzský filozof Jean-Jacques Rousseau, který se domníval, že společenská smlouva vznikla přenosem původních individuálních zájmů na {\it všeobecnou vůli} ({\it volonté générale}), která představuje svrchovanost lidu.
+
+  \subsection*{Stavy~\cite{Hroch:}}
+  \addcontentsline{toc}{subsection}{Stavy}
+  \label{sec:stavy}
+
+  {\bf Stavy} -- v předmoderní společnosti právně a sociálně uzavřené skupiny lidí, které obvykle spojoval shodný původ, a následně také postavení v systému správy a v podílu na politické moci. Někdy také byl stav charakterizován obdobnou profesí, respektive stejným typem vzdělání (duchovenstvo). Od pozdního středověku se ustálila představa o třech stavech -- šlechtickém, duchovním a měšťanském a zároveň se rozlišoval stav urozený od neurozeného. Přechod do urozeného stavu byl ve většině evropských zemí možný jen zcela výjimečně, poměrně nejsnazší v Anglii. Šlechtický, duchovní a později obvykle také měšťanský stav získaly politické zastoupení ve stavovském sněmu, na jehož půdě se uplatňoval zájem jednotlivých stavů proti panovnické moci ($\nearrow$stavovská monarchie). Sedláci byli jako samostatný stav zastoupeni jen výjimečně (Švédsko, švýcarské kantony).
+
+  \subsection*{Tereziánské reformy~\cite{Hroch:}}
+  \addcontentsline{toc}{subsection}{Tereziánské reformy}
+  \label{sec:terezianskeReformy}
+
+  {\bf Tereziánské reformy} -- reformy ve smyslu centralizace, byrokratizace a \hyperref[sec:modernizace]{modernizace} habsburské monarchie, k nimž přivedl královnu Marii Terezii kritický stav habsburského soustátí, který odhalily $\nearrow$války o rakouské dědictví. První vlnu reforem, zejména v oblasti státní centralizace, armády a berní, inicioval již na sklonku 40. let F. W. Haugwitz. Bylo to zrušení $\nearrow$České a Rakouské královské dvorské kanceláře a zřízení centrálního orgánu pro veřejné a finanční záležitosti ({\it Directorium in publicis et cameralibrus}, 1749), nejvyšší instance pro soudní záležitosti ({\it Oberste Justizstelle},1749) a vytvoření státní rady jako nejvyššího poradního orgánu (1760); zavedení tzv. decenálního (desetiletého) recesu -- závazek $\nearrow$\hyperref[sec:stavy]{stavů} povolat po deset let bez průtahů daně -- 1749). Byl ukončen a revidován i soupis $\nearrow$rustikálu a $\nearrow$dominikálu. Došlo také k reformě měnové (1 zlatý ve stříbře o hodnotě poloviny tolaru či 30 krejcarů) a zavedení jednotných celních tarifů, celního řádu pro země české, alpské a polské i jednotného systému měr a vah. Vznikla také první kompilace $\nearrow$trestního práva pro českorakouské země, která reglementovala a poněkud zmírnila raně novověkou trestní represi ($\nearrow${\it Constitutio Criminalis Theresiana}, 1769) a v roce 1776 byla z iniciativy J. v. Sonnenfelse zrušena $\nearrow$tortura. \hyperref[sec:poddanstvi]{Poddanské} záležitosti, zejména regulaci poddanských povinností vůči vrchnosti, měla řešit činnost urbariálních komisí. V důsledku rolnického $\nearrow$povstání roku 1775 vydala panovnice $\nearrow$robotní patent. Po zrušení $\nearrow$jezuitského řádu (1773), který disponoval monopolem na vzdělání, došlo k reformě školství, které bylo převedeno do péče $\nearrow$piaristů, k zavedení povinné školní docházky. Kladl se důraz na vzdělávání úřednictva a formování odborníků v národohospodářských vědách. Náboženská a církevní oblast však zůstala v podstatě nedotčena až do nástupu Josefa II., který reformní trend v habsburských zemích dovršil v $\nearrow$\hyperref[sec:josefinskeReformy]{josefinských reformách}.
+
+  \subsection*{Zwingliho reformace~\cite{Hroch:}}
+  \addcontentsline{toc}{subsection}{Zwingliho reformace}
+  \label{sec:zwinglihoReformace}
+
+  {\bf Zwingliho reformace} -- učení Lutherova \hyperref[sec:humanismus]{humanisticky} vzdělaného přívržence Ulricha Zwingliho, jenž jako kazatel ve švýcarském městě Curychu zavedl v letech 1520--23 $\nearrow$reformaci, která byla teologicky i sociálně radikálnější než $\nearrow$\hyperref[sec:lutherReformace]{Lutherova}. Zwingli odstranil z bohoslužeb vnější obřady i výzdobu kostelů a odmítl episkopální uspořádání církve i učení o transsubstanciaci. Náboženská obec byla podřízena ve světských záležitostech městské radě, v teologických otázkách svému kazateli, její příslušníci měli projevovat svoji zbožnost především prací pro bližní a pro zlepšení podmínek pozemského života. Zwingli dával \hyperref[sec:poddanstvi]{poddaným} právo na odpor proti tyranské a nespravedlivé vrchnosti, ale odmítal jakékoli změny stávajícího systému vlastnických i samosprávných vztahů ve městech. Proto také vykázal z curyšského území $\nearrow$novokřtěnce, kteří původně patřili k jeho přívržencům. Zwingli ovlivnil řadu švýcarských $\nearrow$měst i některá města hornoněmecká, ale do vzdálenějších oblastí jeho vliv nesahal. Vzhledem k tomu, že $\nearrow$\hyperref[sec:kalvinReformace]{Kalvínova reformace} byla přívržencům Zwingliho blízká a dosáhla mnohem širšího ohlasu v Evropě, došlo nakonec ke spojení obou v tzv. helvetské církvi ($\nearrow$helveetská konfese).
+
+  \section*{Encyklopedie moderní historie.}
+  \addcontentsline{toc}{section}{\cite{Pecenka:}~Encyklopedie moderní historie.}
+  \subsection*{Fašismus~\cite{Pecenka:}}
+  \addcontentsline{toc}{subsection}{Fašismus}
+  \label{sec:fasismus}
+
+  {\bf Fašismus} -- otevřená diktatura antiliberálního a antidemokratického zaměření, vycházející z nacionalismu nebo rasismu. Na rozdíl od klasických velkých politických koncepcí jako je liberalismus, konzervatismus a $\nearrow$socialismus, které pocházejí z 19. století, je fašismus plodem situace mezi dvěma světovými válkami. Prvními zeměmi, kde se prosadila fašistická teorie i praxe, byly Itálie a Německo.
+
+  V Itálii byla v roce 1919 založena teroristická organizace $\nearrow${\it Fasci di combattimento}, přeměněná v roce 1921 ve fašistickou stranu ({\it Partito Nazionale Fascista}). Název fašismus je odvozen od \uv{fasces}, svazku prutů, který se nosil ve starém Římě před konzuly jako znak jejich autority. Do čela fašistické strany se postavil Benito Mussolini, předválečný člen a funkcionář socialistické strany. Vzestup fašismu byl v Itálii velmi rychlý, již v roce 1922 po tzv. $\nearrow$pochodu na Řím byl Mussolini jmenován předsedou vlády, v letech 1925--1926 byl postupně likvidován parlamentní režim a v roce 1926 vyhlášen fašistický stát jedné strany.
+
+  V Německu, kde byla Německá nacionálně socialistická dělnická strana ($\nearrow$NSDAP) známá pod jménem \hyperref[sec:nacismus]{nacistická} strana (založena také v roce 1919), se stal vůdce strany Adolf Hitler \hyperref[sec:rise]{říšským} kancléřem až v roce 1933. Pak během jednoho roku přeměnil stát v nacistickou diktaturu. Itálii a Německo následovaly další evropské země v nastolení autoritativních režimů s fašizujícími tendencemi. V Portugalsku začala $\nearrow$Salazarova diktatura v roce 1928, $\nearrow$Frankova diktatura ve Španělsku byla nastolena občanskou válkou v letech 1936--1939. Fašistické rysy měly i vládnoucí režimy v Maďarsku, Rumunsku a dalších zemích.
+
+  Příčin této vlny fašismu v Evropě byla celá řada. Demokratické vlády ustavené v evropských státech po I. světové válce byly většinou nestabilními koalicemi stran s různými zájmy, které nebyly schopny řešit problémy nastalé hospodářské a politické krize. V situaci, kdy se objevily slabiny a nevýhody demokratického systému, se jevila vláda silné ruky jako řešení. Fašistická hnutí v té době měla rysy modernosti a dynamičnosti a mnohým svým přívržencům umožňovala výrazný sociální vzestup.
+
+  Další příčinou byla Říjnová revoluce a po ní následující vláda bolševiků v Rusku. Nejen majetné vrstvy, ale i střední třída drobných podnikatelů, rolníků a řemeslníků (a právě z ní se rekrutovala většina přívrženců fašistických hnutí) měla značné obavy z nástupu období sociální revoluce. Tyto obavy dále zvyšoval postup \hyperref[sec:komunismus]{komunistických} stran ve všech evropských zemích, vystupujících s teorií sociálfašismu proti sociálně demokratickým stranám a současně vytvářejících např. v Německu polovojenské organizace obdobné fašistickým.
+
+  Fašismus se liší od jiných ideologií především svým antiracionalismem. Není založen na abstraktních idejích jako např. liberalismus a socialismus, nýbrž na politické aktivitě vyvolané působením na emoce a iracionální pohnutky. Značný vliv měl na fašismus sociální darwinismus svou koncepcí boje jako přirozené a nutné podmínky společenského života. Uctívání moci a síly vedlo až k tomu, že fašismus jako jediná politická ideologie považuje válku za dobro (Mussoliniho názor: \uv{válka je pro muže totéž co mateřství pro ženy}). S tím úzce souvisí popírání ideje rovnosti lidí a programové elitářství. Podle fašismu se společnost skládá z nejvyššího vůdce ({\it duce}, {\it führer}, {\it caudillo}), s neomezenou mocí a nezpochybnitelnou ideovou autoritou a dále z elity (výlučně mužské), která se vyčleňuje svými schopnostmi. Zbytek tvoří slepě poslušné masy, které musí být vedeny a řízeny.
+
+  Vůdcovský princip byl základní hodnotou fašistického státu. Demokratické instituce jako volby, parlament a politické strany byly buď zrušeny nebo silně oslabeny. Úloha státu se však nesnížila, nýbrž naopak byla značně posílena. Svou snahou o komplexní politickou kontrolu má fašistický stát všechny rysy totalitarismu.
+
+  Na rozdíl od \hyperref[sec:komunismus]{komunismu} nebyla ve fašistických státech ekonomika přímo řízena, ale pouze státem regulována (především s ohledem na vojenské cíle). V ostatním se však fašismus od \hyperref[sec:komunismus]{komunismu} svými metodami příliš nelišil s výjimkou typicky fašistických rysů -- militantního nacionalismu a rasismu (v Německu ve spojení s antisemitismem).
+
+  Nejvlivnější fašistická hnutí v Německu a Itálii byla potlačena až porážkou uvedených zemí ve 2. světové válce. Určitý politický význam má i v současnosti tzv. neofašismus (zvláště v Itálii, Francii a Německu), který ideově na fašismus navazuje. Německý fašismus viz \hyperref[sec:nacismus]{Nacismus}.
+
+  \subsection*{Komunismus~\cite{Pecenka:}}
+  \addcontentsline{toc}{subsection}{Komunismus}
+  \label{sec:komunismus}
+
+  {\bf Komunismus} -- v širší rovině společenský systém založený na společném vlastnictví, resp. společném vlastnictví výrobních prostředků, v užším slova smyslu oficiální ideologie a politická praxe bývalého Sovětského svazu, jež se zformovala po uchopení moci v Rusku bolševickou stranou po Říjnové revoluci v roce 1917. Přestože jejími výchozími idejemi byly názory Marxe a Engelse (viz Socialismus), byla postupně přizpůsobována jedinému cíli -- udržení politické moci komunistickou stranou. Reálný komunismus se tak značně vzdálil od Marxových představ (např. k moci se nedostal v rozvinutých kapitalistických zemích západní Evropy, nýbrž v zaostalém agrárním Rusku).
+
+  Na podobu bolševického modelu komunismu měla zásadní vliv teorie i politická praxe Vladimíra Iljiče Lenina. Ten vypracoval teorii přechodného období mezi proletářskou revolucí a  plně rozvinutým socialismem, tzv. diktaturu proletariátu. V ní na rozdíl od Marxových předpokladů nezačne stát odumírat, ale naopak jeho význam stoupá v zájmu ochrany dělnické třídy před kontrarevolucí svržené buržoazie. Těmto teoretickým úvahám se dostalo praktického naplnění v podobě rudého teroru, \uv{válečného komunismu} a po krátkém uvolnění v období $\nearrow$NEPu 20. let v podobě $\nearrow$stalinismu, kdy se Sovětský svaz stal plně totalitní diktaturou. Mezinárodní komunistické hnutí bylo z Moskvy řízeno prostřednictvím $\nearrow$Kominterny.
+
+  Po 2. světové válce byl již Sovětský svaz průmyslovou a vojenskou velmocí. Jeho politický vliv se dále zvýšil vznikem komunistických režimů ve východní Evropě po roce 1945, v Číně v roce 1949 a expanzí ve Třetím světě. Nicméně od 50. let ztratila Moskva hegemoniální roli ve světovém komunistickém hnutí (mimo Východní Evropu), když její pozice byla otřesena $\nearrow$sovětsko-jugoslávskou, resp. $\nearrow$sovětsko-čínskou roztržkou. Dokonce i ve Východní Evropě se objevovaly tendence k samostatnosti, jakkoli v rámci komunistického systému ($\nearrow$kadárismus). Během 70. let se jako reakce na tzv. neostalinismus (viz Brežněvismus), který v SSSR zavedl po odstranění Chruščova v roce 1964 Leonid Brežněv, začal v západoevropských komunistických stranách formovat $\nearrow$eurokomunismus. Pokus o reformu politického a ekonomického systému (viz Perestrojka), kterou se pokusil realizovat v SSSR Michail Gorbačov, nebyl úspěšný a celý systém se rozložil. Viz též jednotlivé komunistické strany, Dekomunizace a demokratizace ve Východní Evropě.
+
+  \subsection*{Nacismus~\cite{Pecenka:}}
+  \addcontentsline{toc}{subsection}{Nacismus}
+  \label{sec:nacismus}
+
+  {\bf Nacismus} -- ideologie Národně socialistické německé dělnické strany vedené Adolfem Hitlerem, známé jako nacistická strana (viz NSDAP).
+
+  Nacismus byl spojením dvou doktrín: \hyperref[sec:fasismus]{fašistické} koncepce státu řízeného nejvyšším vůdcem, ztělesňujícím národní vůli, a rasistickou koncepcí o nadřazenosti árijské rasy a oprávnění porobení nebo likvidace ostatních ras. Německý nacismus byl filosoficky mnohem triviálnější než italský \hyperref[sec:fasismus]{fašismus}, byl však politicky úspěšnější. Jeho program zformuloval Hitler v knize $\nearrow${\it Mein Kampf} (Můj boj) v roce 1925 jako boj o životní prostor na východě ($\nearrow${\it Lebensraum}), světovládu německého národa a rasovou čistotu (zejména militantní antisemitismus, resp. sociální darwinismus). Úspěšnost nacismu byla založena na schopnosti syntetizovat do jednotné ideologie i protichůdné prvky -- socialismus pro dělníky, antibolševismus pro zaměstnavatele, nacionalismus pro tradiční konzervativce a antisemitismus pro ty, kdo hledali viníka válečné porážky a ekonomické krize.
+
+  Nacistický politický oportunismus slibující voličům znárodnění i ochranu soukromého vlastnictví, zdůrazňující industriální moc Německa a současně přednosti rolnictva, měl v situaci hluboké ekonomické i politické krize Německa na počátku 30. let úspěch a získal masovou podporu. Z logiky věci vyplynulo, že uvedené politické sliby ustoupily do pozadí a nosnými sloupy nacistické ideologie se stal vůdcovský princip, důraz na rasovou čistotu a především národní expanze. To ve spojení s názorem, že v mezinárodních vztazích má pravdu ten, kdo má moc, vedlo nevyhnutelně k válce. Přes naivní očekávání komunistů i sociálních demokratů, že němečtí dělníci odstraní nacismus socialistickou revolucí, ukončila nacistické období až totální porážka v roce 1945. Hlubokou analýzu nacismu podala Hannah Ardentová ve studii {\it The Origins of Totalitarianism} z roku 1951, kde ho chápe jako patologickou epizodu v dějinách masové společnosti.
+
+
+\begin{thebibliography}{9}
+
+\bibitem{Oliva:}
+  MAREK, Václav, Pavel OLIVA a Petr CHARVÁT.
+  Encyklopedie dějin starověku.
+  Praha: Libri,
+  2008.
+  ISBN 978-80-7277-201-8.
+
+\bibitem{Hroch:}
+  HROCH, Miroslav a Karel KUBIŠ.
+  Encyklopedie dějin novověku 1492-1815.
+  Praha: Libri,
+  2005.
+  ISBN 80-7277-246-5.
+
+\bibitem{Pecenka:}
+  PEČENKA, Marek a Petr LUŇÁK.
+  Encyklopedie moderní historie. 3., rozš. vyd.
+  Praha: Libri,
+  1999.
+  ISBN 80-85983-95-8.
+
+\end{thebibliography}
+
+\end{document}
